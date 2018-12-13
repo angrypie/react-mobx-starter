@@ -1,7 +1,7 @@
 import { observable } from 'mobx'
 
 class AppState {
-	@observable authenticated = false
+	@observable authenticated = true
 
 	login() {
 		this.authenticated = true

@@ -1,20 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
-import {  Row, Col } from 'react-flexbox-grid'
 
 class Header extends Component {
-	componentWillMount() {
-	}
 	render() {
-		const { match } = this.props
-		console.log(match)
-		return (
-			<Row middle='xs'>
-				<Col xs={12}>
-					<Nav />
-				</Col>
-			</Row>
-		)
+		return <Nav />
 	}
 }
 
@@ -54,9 +43,12 @@ const Nav = () => (
     <style jsx>{`
 
 			nav {
-				height: 5em;
+				height: 4em;
 				display: flex;
 				align-items: center;
+				flex: 1;
+				width: 100%;
+				max-width: 1000px;
 			}
 
       .links {

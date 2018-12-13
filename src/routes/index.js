@@ -1,9 +1,9 @@
+import React from 'react'
+import { Route } from 'react-router-dom'
+
 import CoreLayout from '../layouts/CoreLayout'
 import Home from './Home'
 import Login from './Login'
-
-import React from 'react'
-import { Route } from 'react-router-dom'
 
 export const LayoutRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route {...rest} render={ ({ match }) => {
@@ -19,9 +19,7 @@ export const LayoutRoute = ({ component: Component, layout: Layout, ...rest }) =
 
 
 export const createRoutes = () => (
-	<div>
-		<LayoutRoute path='/' layout={CoreLayout} />
-	</div>
+	<LayoutRoute path='/' layout={CoreLayout} />
 )
 
 
