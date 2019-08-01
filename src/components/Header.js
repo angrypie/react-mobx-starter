@@ -7,10 +7,8 @@ class Header extends Component {
 	}
 }
 
-const links = [
-	{ href: '/login', label: 'Login Page' },
-].map(link => {
-  return link
+const links = [{ href: '/login', label: 'Login Page' }].map(link => {
+	return link
 })
 
 const linkStyle = {
@@ -20,28 +18,25 @@ const linkStyle = {
 }
 
 const Nav = () => (
-  <nav>
-    <div className='links'>
+	<nav>
+		<div className='links'>
 			<div className='links-group'>
-        <Link to='/' className='link' style={linkStyle}>
+				<Link to='/' className='link' style={linkStyle}>
 					Home
-        </Link>
+				</Link>
 			</div>
 			<div className='links-group'>
-        {links.map(
-          ({ href, label }, i) => (
-            <div key={i}>
-              <Link to={href} style={linkStyle}>
-                {label}
-              </Link>
-            </div>
-          )
-        )}
+				{links.map(({ href, label }, i) => (
+					<div key={i}>
+						<Link to={href} style={linkStyle}>
+							{label}
+						</Link>
+					</div>
+				))}
 			</div>
-    </div>
+		</div>
 
-    <style jsx>{`
-
+		<style jsx>{`
 			nav {
 				height: 4em;
 				display: flex;
@@ -51,22 +46,21 @@ const Nav = () => (
 				max-width: 1000px;
 			}
 
-      .links {
-        display: flex;
-        justify-content: space-between;
+			.links {
+				display: flex;
+				justify-content: space-between;
 				flex: 1;
-      }
+			}
 
-      .links-group {
-        display: flex;
-      }
+			.links-group {
+				display: flex;
+			}
 
 			.links-group > div {
 				padding: 0 1em;
 			}
-
-    `}</style>
-  </nav>
+		`}</style>
+	</nav>
 )
 
 export default Header

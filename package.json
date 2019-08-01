@@ -1,35 +1,37 @@
 {
-  "name": "react-mobx-starter",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^5.2.4",
-    "mobx": "^5.13.0",
-    "mobx-react": "^6.1.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1",
-    "styled-jsx": "^3.2.1",
-    "wouter": "^2.1.1"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.4.4",
-    "babel-plugin-root-import": "^6.4.1"
-  }
+	"name": "react-mobx-starter",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@craco/craco": "^5.2.4",
+		"mobx": "^5.13.0",
+		"mobx-react": "^6.1.1",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-scripts": "^3.0.1",
+		"styled-jsx": "^3.2.1",
+		"wouter": "^2.1.1"
+	},
+	"scripts": {
+		"start": "craco start",
+		"build": "craco build",
+		"test": "craco test",
+		"eject": "react-scripts eject",
+		"format": "prettier --write \"src/**/*.{js,jsx,css}\""
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"@babel/plugin-proposal-decorators": "^7.4.4",
+		"babel-plugin-root-import": "^6.4.1",
+		"prettier": "^1.18.2"
+	}
 }
