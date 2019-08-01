@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^3.4.0",
-    "mobx": "^5.9.0",
-    "mobx-react": "^5.4.3",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.3",
-    "styled-jsx": "^3.2.0"
+    "@craco/craco": "^5.2.4",
+    "mobx": "^5.13.0",
+    "mobx-react": "^6.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1",
+    "styled-jsx": "^3.2.1",
+    "wouter": "^2.1.1"
   },
   "scripts": {
     "start": "craco start",
@@ -29,6 +28,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.3.0"
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "babel-plugin-root-import": "^6.4.1"
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter, Link } from 'react-router-dom'
+import { Link } from 'wouter'
 
 class Header extends Component {
 	render() {
@@ -69,4 +69,4 @@ const Nav = () => (
   </nav>
 )
 
-export default withRouter(Header)
+export default Header

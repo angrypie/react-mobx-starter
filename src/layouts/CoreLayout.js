@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Security from '../containers/Security'
+import Header from '~/components/Header'
+import Security from '~/containers/Security'
 
-const CoreLayout = ({ path, children }) => <Security>
+const CoreLayout = ({  children }) => <Security>
 	<div className='layout'>
 		<Header />
 		<div className='content-container'>

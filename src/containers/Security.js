@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer, inject } from 'mobx-react'
-import LoginView from '../routes/Login'
+import LoginView from '~/routes/Login'
 
 const Security = inject('store')(observer(
 	({ store, children }) => {
