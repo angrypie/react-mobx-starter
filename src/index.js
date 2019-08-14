@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
 
 import App from './containers/App'
-import Store from './store'
+import { StoreProvider } from './store'
 import Routes from './routes'
-
-const store = new Store()
 const routes = Routes()
 
 ReactDOM.render(
-	<App store={store} routes={routes} />,
+	<StoreProvider>
+		<App routes={routes} />
+	</StoreProvider>,
 	document.getElementById('root')
 )
 

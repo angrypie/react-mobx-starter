@@ -7,8 +7,6 @@ const CoreLayout = ({ children }) => (
 		<div className='layout'>
 			<Header />
 			<div className='content-container'>{children}</div>
-			<style jsx>{``}</style>
-
 			<style jsx>{`
 				.layout {
 					display: flex;

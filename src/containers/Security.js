@@ -1,15 +1,14 @@
 import React from 'react'
-import { observer, inject } from 'mobx-react'
-import LoginView from '~/routes/Login'
+import Login from '~/routes/Login'
+import { useStore, observer } from '~/store'
 
-const Security = inject('store')(
-	observer(({ store, children }) => {
-		if (!store.authenticated) {
-			return <LoginView />
-		}
+const Security = observer(({ children }) => {
+	const store = useStore()
+	if (!store.authenticated) {
+		return <Login />
+	}
 
-		return children
-	})
-)
+	return children
+})
 
 export default Security

@@ -1,32 +1,25 @@
-import React, { Component } from 'react'
-import { inject, observer } from 'mobx-react'
+import React from 'react'
+import { useStore, observer } from '~/store'
 
-@inject('store')
-@observer
-class LoginView extends Component {
-	loginButton() {
-		const { store } = this.props
-		store.authenticated ? store.logout() : store.login()
-	}
+const Login = observer(() => {
+	const store = useStore()
+	const { authenticated, login, logout } = store
+	const statement = `You are ${authenticated ? '' : 'not'} logged in`
 
-	render() {
-		const { authenticated } = this.props.store
-		const statement = `You are ${authenticated ? '' : 'not'} logged in`
-		return (
-			<div>
-				<p>This is './routes/Home/components/LoginView.js'</p>
-				<div>{statement}</div>
-				<code>
-					See <b>authenticated</b> property in application state:
-					./store/index.js
-				</code>
-				<br />
-				<button onClick={this.loginButton.bind(this)}>
-					{authenticated ? 'Logout' : 'Login'}
-				</button>
-			</div>
-		)
-	}
-}
+	const loginButton = () => (authenticated ? logout() : login())
+	return (
+		<div>
+			<p>This is './routes/Home/components/LoginView.js'</p>
+			<div>{statement}</div>
+			<code>
+				See <b>authenticated</b> property in application state: ./store/index.js
+			</code>
+			<br />
+			<button onClick={loginButton}>
+				{authenticated ? 'Logout' : 'Login'}
+			</button>
+		</div>
+	)
+})
 
-export default LoginView
+export default Login

@@ -1,8 +1,8 @@
 const babel = {
 	plugins: [
-		['@babel/plugin-proposal-decorators', { legacy: true }],
 		['styled-jsx/babel'],
 		['babel-plugin-root-import', { rootPathSuffix: 'src' }],
+		'@babel/plugin-proposal-object-rest-spread',
 	],
 }
 

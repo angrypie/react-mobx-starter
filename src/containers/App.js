@@ -1,12 +1,7 @@
-import React, { Component } from 'react'
-import { Provider, observer } from 'mobx-react'
+import React from 'react'
 
-@observer
-class App extends Component {
-	render() {
-		let { store, routes } = this.props
-		return <Provider store={store}>{routes}</Provider>
-	}
+const App = ({ routes }) => {
+	return <>{routes}</>
 }
 
 export default App
