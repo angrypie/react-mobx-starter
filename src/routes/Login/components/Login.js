@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStore, observer } from '~/store'
+import { useStore, observer } from 'store'
 
 const Login = observer(() => {
 	const store = useStore()

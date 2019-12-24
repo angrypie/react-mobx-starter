@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route } from 'wouter'
 
-import CoreLayout from '~/layouts/CoreLayout'
+import CoreLayout from 'layouts/CoreLayout'
 import Home from './Home'
 import Login from './Login'
 

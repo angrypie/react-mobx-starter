@@ -1,9 +1,5 @@
 const babel = {
-	plugins: [
-		['styled-jsx/babel'],
-		['babel-plugin-root-import', { rootPathSuffix: 'src' }],
-		'@babel/plugin-proposal-object-rest-spread',
-	],
+	plugins: [['styled-jsx/babel'], '@babel/plugin-proposal-object-rest-spread'],
 }
 
 //const webpack = {}

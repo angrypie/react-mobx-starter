@@ -1,6 +1,6 @@
 import React from 'react'
-import { StoreProvider } from '~/store'
-import Routes from '~/routes'
+import { StoreProvider } from 'store'
+import Routes from 'routes'
 const routes = Routes()
 
 const App = () => {

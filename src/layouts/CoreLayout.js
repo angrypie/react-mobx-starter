@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '~/components/Header'
-import Security from '~/containers/Security'
+import Header from 'components/Header'
+import Security from 'containers/Security'
 
 const CoreLayout = ({ children }) => (
 	<Security>
