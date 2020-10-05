@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"mobx": "^5.15.6",
-		"mobx-react-lite": "^2.2.1",
+		"mobx": "^6.0.0",
+		"mobx-react-lite": "^3.0.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"styled-jsx": "^3.3.0",
@@ -28,10 +28,10 @@
 	],
 	"devDependencies": {
 		"@babel/plugin-proposal-object-rest-spread": "^7.11.0",
-		"@craco/craco": "^5.6.4",
+		"@craco/craco": "^5.7.0",
 		"husky": "^4.3.0",
-		"lint-staged": "^10.3.0",
-		"prettier": "^2.1.1",
+		"lint-staged": "^10.4.0",
+		"prettier": "^2.1.2",
 		"react-scripts": "^3.4.3",
 		"rimraf": "^3.0.2"
 	},
