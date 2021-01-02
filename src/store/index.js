@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocalStore } from 'mobx-react-lite'
+import { useLocalObservable } from 'mobx-react-lite'
 export { observer } from 'mobx-react-lite'
 
 export function createStore() {
@@ -19,7 +19,7 @@ export function createStore() {
 const storeContext = React.createContext(null)
 
 export const StoreProvider = ({ children }) => {
-	const store = useLocalStore(createStore)
+	const store = useLocalObservable(createStore)
 	return <storeContext.Provider value={store}>{children}</storeContext.Provider>
 }
 
